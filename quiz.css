@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #023f68;
+}
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding:30px;
+}
+.app h1{
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid#333;
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+   font-size: 18px;
+   color: #001e4d;
+   font-weight: 600;
+   margin-bottom: 20px; /* Ökar avståndet under frågan */
+}
+/*..code blocket: här koden skall presenteras..*/
+.code-block {
+    font-family: "Courier New", monospace; /* Gör det kod-liknande */
+    background: #f4f4f4; /* Lätt grå bakgrund */
+    color: #333; /* Mörk text */
+    padding: 10px; /* Lägger till lite utrymme runt texten */
+    border-radius: 5px; /* Rundade hörn */
+    white-space: pre-wrap; /* Behåller radbrytningar */
+    word-wrap: break-word; /* Gör så att långa rader bryts vid behov */
+    overflow-x: auto; /* Lägg till horisontell scroll om nödvändigt */
+    margin-top: 10px; /* Skapar avstånd mellan frågan och koden */
+    border: 1px solid #ccc; /* Ger en tunn ram runt koden */
+}
+
+#answer-btn {
+    display: flex;
+    flex-direction: column; /* Separerar knapparna vertikalt */
+    gap: 10px; /* Lägger till mellanrum mellan knapparna */
+    margin-top: 15px; /* Ökar avståndet ovanför första knappen */
+}
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding:10px;
+    margin:10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn.btn:hover([disabled]){
+    background: #222;
+    color: #fff;
+}
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+
+}
+/*..JS class= correct och incorrect får styling.*/
+.correct{
+    background: #015023;
+    color: #fff;
+}
+
+.incorrect{
+    background: #f2a381; 
+}
